@@ -12,7 +12,7 @@ gem 'rails', '~> 7.0.3', '>= 7.0.3.1'
 gem 'sprockets-rails'
 
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 1.1'
+gem 'pg'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
@@ -73,6 +73,10 @@ group :test do
   gem 'webdrivers'
 end
 
+gem 'rspec-core'
+
+gem 'activerecord-postgresql-adapter'
+
 # Rubocop
 gem 'rubocop', '>= 1.0', '< 2.0'
 
@@ -92,3 +96,5 @@ gem 'rswag'
 
 # Devise
 gem 'devise'
+
+gem 'sqlite3'
