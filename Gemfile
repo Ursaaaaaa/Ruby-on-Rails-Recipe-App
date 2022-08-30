@@ -69,6 +69,7 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'
+   gem 'rspec-rails'
 end
 
 gem 'rspec-core'
@@ -96,3 +97,5 @@ gem 'rswag'
 gem 'devise'
 
 gem 'sqlite3'
+
+gem 'rails-controller-testing'
