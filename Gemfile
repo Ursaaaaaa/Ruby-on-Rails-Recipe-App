@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -71,4 +73,22 @@ group :test do
   gem 'webdrivers'
 end
 
+# Rubocop
+gem 'rubocop', '>= 1.0', '< 2.0'
+
+# n+1
+gem 'bullet'
+
+# cancan
 gem 'cancancan'
+
+# FFi
+gem 'ffi'
+
+# API
+gem 'jwt'
+
+gem 'rswag'
+
+# Devise
+gem 'devise'
