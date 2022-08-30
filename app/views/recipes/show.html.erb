@@ -8,5 +8,10 @@
     <p class="prep">Preparation time: <%= @recipe.preparation_time %>hours</p>
     <p class="cook">Cooking time: <%= @recipe.cooking_time %>hours</p>
     <p class="steps">Cooking steps: <%= @recipe.description %></p>
+   
+     <% if can? :create, @food %>
+        <div class='add-btn'><%= link_to 'Add Food',  new_food_path, class:"add-food" %></div>
+     <% end %>
+   
   </div>
 </section>

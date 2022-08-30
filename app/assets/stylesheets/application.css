@@ -142,3 +142,18 @@
 .reg-div {
   margin-top: 0.5rem;
 }
+
+.notifications {
+  text-align: center;
+  padding: 2rem;
+}
+
+.add-food {
+  text-decoration: none;
+  border: 1px solid grey;
+  padding: 0.3rem;
+}
+
+.add-btn {
+  margin-top: 1rem;
+}
