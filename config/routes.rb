@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :food_recipes
   resources :foods
   resources :public_recipes
-  resources :inventory
+  resources :inventories
   resources :inventory_food
   resources :general_shopping_lists, only: %i[index], path: '/general_shopping_list'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

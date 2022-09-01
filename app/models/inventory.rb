@@ -1,5 +1,5 @@
 class Inventory < ApplicationRecord
-  belongs to :user
+  belongs_to :user
 
   has_many :foods, through: :inventory_food
 

@@ -1,0 +1,15 @@
+<section class = 'recipe-description'>
+  <div class="path">
+    <%= link_to 'Back', inventories_path, class:"link back" %>
+  </div>
+
+ <h2 class="names"><%= @inventory.name %></h2>
+  <div class="holder">
+    <p class="prep">Inventory Description: <%= @inventory.string %></p>
+   
+    <div class='add-btn'><%= link_to 'Add Food',  new_food_path, class:"add-food" %></div>
+     <% if can? :create, @food %>
+     <% end %>
+   
+  </div>
+</section>

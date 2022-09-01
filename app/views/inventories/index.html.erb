@@ -1,1 +1,26 @@
-<h1>Inventory Home</h1>
+
+<section class='recipes'>
+  <% if @current_user.nil? %>
+    <h2>Welcome, kindly login to see the list!</h2>
+  <% else %>
+  <h1 class="title">Your Inventories</h1>
+  <% if @inventories.blank? %>
+    <h2>No inventories found!<h2>
+  <% else %>
+    <% @inventories.each do |inventory| %>
+      <article class="card">
+        <div>
+          <h2><%= link_to inventory.name, inventory_path(inventory.id), method: :get, class:"link" %></h2>
+          <% if can? :destroy, inventory %>
+            <%= button_to 'Remove', inventory_path(inventory.id), method: :delete, class:'delete-btn' %>
+          <% end %>
+        </div>
+        <div>
+          <p><%= inventory.string %></p>
+        </div>
+      </article>
+    <% end %>  
+  <% end %>
+  <%= button_to 'Add new inventory', new_inventory_path, method: :get, class:"add-recipe" %>
+<% end %>
+</section>
