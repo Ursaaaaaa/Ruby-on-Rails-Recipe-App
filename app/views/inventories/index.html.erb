@@ -12,11 +12,11 @@
         <div>
           <h2><%= link_to inventory.name, inventory_path(inventory.id), method: :get, class:"link" %></h2>
           <% if can? :destroy, inventory %>
-            <%= button_to 'Remove', inventory_path(recipe.id), method: :delete, class:'delete-btn' %>
+            <%= button_to 'Remove', inventory_path(inventory.id), method: :delete, class:'delete-btn' %>
           <% end %>
         </div>
         <div>
-          <p><%= inventory.description %></p>
+          <p><%= inventory.string %></p>
         </div>
       </article>
     <% end %>  
