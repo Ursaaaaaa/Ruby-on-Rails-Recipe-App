@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  get 'foods/index'
+  get 'foods/show'
   devise_for :users
   root 'recipes#index'
   resources :recipes
