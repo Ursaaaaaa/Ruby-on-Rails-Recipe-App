@@ -1,0 +1,16 @@
+<section id="shopping-list">
+    <h2>Shopping List</h2>
+    <div class="summary">
+      <div>
+        <h3>Amount of food items to buy: <%=  %></h3>
+        <h3>
+            Total value of food needed: $<%= number_with_precision(@total_price, precision: 2) %>
+        </h3>
+      </div>
+
+      <div>
+        <h3>Recipe: <%=  %>
+        <h3>Inventory: <%=  %>
+      </div>
+    </div>
+</section>
