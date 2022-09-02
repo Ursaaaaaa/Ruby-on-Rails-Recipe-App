@@ -9,8 +9,8 @@
     </div>
 
     <div>
-      <h3>Recipe: <%= @recipes.name %>
-      <h3>Inventory: <%= @inventories.name  %>
+      <h3>Recipe: <%= link_to @recipes.name, recipes_path(@recipe) %>
+      <h3>Inventory: <%= link_to @inventories.name, inventory_path(@inventories)  %>
     </div>
   </div>
 
