@@ -1,6 +1,6 @@
 <%= form_with model: food, url: foods_path  do |form| %>
 
-      <div>
+      <div class="food-form">
          <%= form.label :name %><br />
         <%= form.text_field :name, autofocus: true, autocomplete: "text" %>
         <% food.errors.full_messages_for(:name).each do |message| %>
@@ -8,7 +8,7 @@
         <% end %>
       </div><br />
 
-      <div>
+      <div class="food-form">
        <%= form.label :measurement_unit %><br />
         <%= form.text_field :measurement_unit, autofocus: true %>
         <% food.errors.full_messages_for(:measurement_unit).each do |message| %>
@@ -16,7 +16,7 @@
         <% end %>
       </div>
     </div>
-    <div>
+    <div class="food-form">
      <%= form.label :price %><br />
         <%= form.number_field :price, autofocus: true %>
         <% food.errors.full_messages_for(:price).each do |message| %>
@@ -24,7 +24,7 @@
         <% end %>
       </div>
     </div>
-  <div>
+  <div class="food-form">
     <%= form.submit %>
   </div>
 <% end %>
