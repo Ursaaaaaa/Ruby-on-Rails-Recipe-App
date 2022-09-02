@@ -1,0 +1,24 @@
+<section>
+<h1>Generate Shopping List</h1>
+
+<div>
+  <h3> Choose an inventory to use</h3>
+
+  <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Select Inventory
+            </button>
+            <ul class="dropdown-menu">
+              <% if @inventories.count > 0 %>
+                <% @inventories.each do |inventory| %>
+                  <li>
+                    <%= link_to inventory.name, shopping_list_path(@recipe_id, @inventory_id), class: 'dropdown-item' %>
+                  </li>
+                <% end %>
+              <% else %>
+                <p>Your inventory is empty</p>
+              <% end %>
+            </ul>
+  </div>
+</div>
+</section>
