@@ -11,6 +11,7 @@
    
      <% if can? :create, @food %>
         <div class='add-btn'><%= link_to 'Add Food',  new_food_path, class:"add-food" %></div>
+        <div class='add-btn'><%= link_to 'Generate Shopping List', new_shopping_list_path, class:"add-food" %></div>
      <% end %>
    
   </div>
