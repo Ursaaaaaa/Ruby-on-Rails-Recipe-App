@@ -2,7 +2,7 @@
 
 Rails.application.routes.draw do
   get 'general_shopping_lists/index'
-  get 'hopping_list/index'
+  get 'shopping_list/:recipe_id/:inventory_id', to: 'inventory_shopping#index', as: :shopping_list
   devise_for :users
   root 'recipes#index'
   resources :recipes
@@ -12,7 +12,8 @@ Rails.application.routes.draw do
   resources :inventories
   resources :inventory_food
   resources :general_shopping_lists, only: %i[index], path: '/general_shopping_list'
-  resources :shopping_list, only: %i[index], path: '/shopping_list'
+  # resources :shopping_list, only: %i[index], path: '/shopping_list'
+  resources :shopping_list
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
