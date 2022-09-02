@@ -12,7 +12,7 @@
               <% if @inventories.count > 0 %>
                 <% @inventories.each do |inventory| %>
                   <li>
-                    <%= link_to inventory.name, shopping_list_path(@recipe_id, @inventory_id), class: 'dropdown-item' %>
+                    <%= link_to inventory.name, shopping_list_index_path, class: 'dropdown-item' %>
                   </li>
                 <% end %>
               <% else %>
