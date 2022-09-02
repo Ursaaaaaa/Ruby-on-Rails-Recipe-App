@@ -159,10 +159,10 @@
 }
 
 #foods-index {
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
 }
 
 #foods-index table {
@@ -190,7 +190,7 @@ tbody td {
 }
 
 .add-new {
-padding: 10px 150px;
+  padding: 10px 150px;
 }
 
 h1 {
@@ -198,6 +198,6 @@ h1 {
 }
 
 .food-form {
-margin: 0 43%;
-padding-top: 5px;
+  margin: 0 43%;
+  padding-top: 5px;
 }
