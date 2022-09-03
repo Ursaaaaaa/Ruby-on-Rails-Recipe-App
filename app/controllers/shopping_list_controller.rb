@@ -3,9 +3,9 @@ class ShoppingListController < ApplicationController
   def new
     @inventories = if current_user.nil?
                  []
-    else
-      @current_user.inventories
-    end
+               else
+                 @current_user.inventories
+               end
   end
 
   def index
