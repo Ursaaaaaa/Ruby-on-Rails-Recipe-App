@@ -12,10 +12,5 @@ Rails.application.routes.draw do
   resources :inventories
   resources :inventory_food
   resources :general_shopping_lists, only: %i[index], path: '/general_shopping_list'
-  # resources :shopping_list, only: %i[index], path: '/shopping_list'
   resources :shopping_list
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
 end
