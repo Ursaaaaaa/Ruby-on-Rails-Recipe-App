@@ -1,0 +1,29 @@
+<div>
+    <div>
+        <%= link_to 'Inventories', inventories_path %>
+    </div>
+    <h2>Please add an inventory</h2>
+    <% if @inventory.errors.any? %>
+    <h2>Unable to save inventory.</h2>
+    <ul>
+      <% @inventory.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  <% end %>
+    <%= form_with model: @inventory, url: inventories_path, method: :post do |f| %>
+        <p class="sname">
+            <%= f.label :name %><br>
+            <%= f.text_field :name, placeholder: 'Inventory name' %><br>
+        </p>
+
+        <p class="sname">
+            <%= f.label :description %><br>
+            <%= f.text_area :description, placeholder: 'Inventory Description' %><br>
+        </p>
+
+        <p class="sname">
+            <%= f.submit "Add Inventory" %>
+        </p>
+    <% end %>
+</div>

@@ -1,0 +1,30 @@
+<div class="navigation">
+  <div>
+    
+    <nav>
+      <ul class="items">
+      <%= link_to "Recipe App", root_path, class: "root navlink" %>
+        <li class="item">
+          <%= link_to "Foods", foods_path,class:"navlink" %>
+        </li>
+        <li class="item">
+          <%= link_to "Recipes", recipes_path,class:"navlink" %>
+        </li>
+        <li class="item">
+          <%= link_to "Inventories", inventories_path, class:"navlink" %>
+        </li>
+        <li class="item">
+          <%= link_to 'General Shopping List', general_shopping_lists_path, class:"navlink" %></div>
+        </li>
+        <li class="item">
+          <%= link_to "Public Recipes", public_recipes_path,class:"navlink" %>
+        </li>
+        <% if current_user %>
+          <li class="bitn item">
+            <%= button_to 'Log out', destroy_user_session_path, method: :delete, class:"logout-btn" %>
+          </li>
+        <% end %>
+      </ul>
+    </nav>
+  </div>
+</div>
