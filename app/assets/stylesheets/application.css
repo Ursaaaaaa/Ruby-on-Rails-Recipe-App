@@ -158,14 +158,14 @@
   margin-top: 1rem;
 }
 
-#foods-index {
+.foods-index {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 50px;
 }
 
-#foods-index table {
+.foods-index table {
   border-collapse: collapse;
   border: gray 2px solid;
 }
@@ -184,7 +184,7 @@ tbody td {
   text-align: center;
 }
 
-#foods-index td .btn {
+.foods-index td .btn {
   background-color: unset;
   border: none;
 }
@@ -208,4 +208,13 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   margin-top: 0.5rem;
+}
+
+.summary {
+  display: flex;
+  gap: 30px;
+}
+
+th {
+  padding: 0 10px;
 }
