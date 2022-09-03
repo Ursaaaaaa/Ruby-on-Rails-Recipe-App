@@ -2,10 +2,10 @@ class ShoppingListController < ApplicationController
   before_action :authenticate_user!
   def new
     @inventories = if current_user.nil?
-                 []
-               else
-                 @current_user.inventories
-               end
+                     []
+                   else
+                     @current_user.inventories
+                   end
   end
 
   def index
