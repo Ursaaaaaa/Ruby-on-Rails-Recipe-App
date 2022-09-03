@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  get 'general_shopping_lists/index'
   get 'shopping_list/:recipe_id/:inventory_id', to: 'shopping_list#index', as: :shopping_list
   devise_for :users
   root 'recipes#index'

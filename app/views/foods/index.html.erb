@@ -1,6 +1,6 @@
 <section id="foods-index">
-  <div class="add-new">
-   <%= button_to "Add Food", new_food_path, method: :get %>
+  <div>
+   <%= button_to "Add Food", new_food_path, method: :get, class: "add-new" %>
   </div>
   <% if @foods.exists? %>
   <table>
@@ -21,7 +21,7 @@
       <% end %>
   </table>
    <% else %>
-          <p>No Food Added yet</p> 
+          <p>No Foods added yet</p> 
       <% end %>
   <div>
 </div>
