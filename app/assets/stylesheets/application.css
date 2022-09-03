@@ -69,9 +69,15 @@
 
 .holder {
   font-size: 1.2rem;
-  width: 30%;
-  margin: auto;
   margin-top: 1rem;
+  border: 1px solid black;
+  padding: 2rem;
+}
+
+.btn-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .prep,
@@ -208,4 +214,19 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   margin-top: 0.5rem;
+}
+
+.recipe-btn {
+  border: 1px solid grey;
+  text-decoration: none;
+  padding: 0.1rem 0.3rem;
+}
+
+.public {
+  display: flex;
+  justify-content: space-between;
+}
+
+.public-btn {
+  margin-right: 3rem;
 }

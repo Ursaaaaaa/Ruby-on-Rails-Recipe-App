@@ -9,10 +9,12 @@ class RecipesController < ApplicationController
 
   def new
     @recipe = Recipe.new
+    
   end
 
   def show
     @recipe = Recipe.find(params[:id])
+    @food_recipes = FoodRecipe.includes(:food).where(recipe_id: @recipe.id)
   end
 
   def create
