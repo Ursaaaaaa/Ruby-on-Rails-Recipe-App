@@ -5,14 +5,23 @@
 
  <h2 class="names"><%= @recipe.name %></h2>
   <div class="holder">
+    <div>
+    <div class='public'>
+      <div>
     <p class="prep">Preparation time: <%= @recipe.preparation_time %>hours</p>
     <p class="cook">Cooking time: <%= @recipe.cooking_time %>hours</p>
     <p class="steps">Cooking steps: <%= @recipe.description %></p>
+    </div>
+    <div class='public-btn'><h3>Public: <%= @recipe.public %></h3></div>
+    </div> 
    
      <% if can? :create, @food %>
-        <div class='add-btn'><%= link_to 'Add Food',  new_food_path, class:"add-food" %></div>
+       <div class ='btn-div'>
         <div class='add-btn'><%= link_to 'Generate Shopping List', new_shopping_list_path, class:"add-food" %></div>
+         <%= link_to 'Add ingredient', new_food_recipe_path(recipe_id: @recipe.id), method: :get, class:'recipe-btn' %>
+       </div>
      <% end %>
+    </div>
    
   </div>
 </section>
