@@ -223,19 +223,19 @@ h1 {
 
 th {
   padding: 0 10px;
+}
 
-  .recipe-btn {
-    border: 1px solid grey;
-    text-decoration: none;
-    padding: 0.1rem 0.3rem;
-  }
+.recipe-btn {
+  border: 1px solid grey;
+  text-decoration: none;
+  padding: 0.1rem 0.3rem;
+}
 
-  .public {
-    display: flex;
-    justify-content: space-between;
-  }
+.public {
+  display: flex;
+  justify-content: space-between;
+}
 
-  .public-btn {
-    margin-right: 3rem;
-  }
+.public-btn {
+  margin-right: 3rem;
 }
