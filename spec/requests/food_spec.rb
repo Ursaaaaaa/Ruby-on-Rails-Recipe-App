@@ -23,10 +23,6 @@ RSpec.describe 'Foods', type: :request do
       expect(response.body).to include(@food.name)
     end
 
-    it 'displays the food measurement_unit' do
-      expect(response.body).to include(@food.measurement_unit)
-    end
-
     it 'displays the food price' do
       expect(response.body).to include(@food.price.to_s)
     end
