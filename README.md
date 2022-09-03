@@ -85,4 +85,4 @@ Thanks to our morning session partners, coding partners and teammates.
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](https://github.com/ramrod433/Ruby-on-Rails-Recipe-App/blob/development/LICENSE) licensed.
