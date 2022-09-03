@@ -67,6 +67,7 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
+  gem 'rspec-rails'
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
@@ -96,3 +97,5 @@ gem 'rswag'
 gem 'devise'
 
 gem 'sqlite3'
+
+gem 'rails-controller-testing'
